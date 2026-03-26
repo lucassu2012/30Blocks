@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - 'v*'
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -36,6 +38,7 @@ jobs:
           name: 30-Blocks-Windows-x64
           path: |
             release/*.exe
+            release/*.zip
           retention-days: 30
 
       - name: Create Release (on tag push)
