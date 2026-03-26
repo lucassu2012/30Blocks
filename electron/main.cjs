@@ -8,7 +8,6 @@ function createWindow() {
     minWidth: 900,
     minHeight: 600,
     title: '30-Blocks 时间管理',
-    icon: path.join(__dirname, '../build/icon.png'),
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
